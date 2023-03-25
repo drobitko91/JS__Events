@@ -1,0 +1,44 @@
+@use './general/normalize';
+@use './general/reset.local';
+
+.row {
+  margin: 20px 10px;
+  padding: 20px;
+  border: 2px dotted lightblue;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 4px 12px;
+}
+
+th {
+  cursor: pointer;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.task-3 {
+  display: inline-block;
+  position: relative;
+  border: 3px groove rebeccapurple;
+}
+
+.resizer {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /*magic to turn square into circle*/
+  background: white;
+  border: 3px solid rebeccapurple;
+  right: -5px;
+  bottom: -5px;
+  cursor: nwse-resize;
+}
